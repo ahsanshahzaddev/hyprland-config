@@ -1,0 +1,11 @@
+[Unit]
+Description=Hyprland Attack Shark Mouse Workspace Modifier Daemon
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 %h/.local/bin/hypr-mouse-workspace.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,57 @@
+# Caches / runtime
+.cache/
+**/qmlcache/
+**/*.qmlc/
+**/*.jsc/
+*.log
+*.qslog
+
+# Backups / generated noise
+*.bak
+*.backup*
+*.saved
+*~
+*.swp
+
+# Quickshell / notification runtime (never commit history)
+**/notifications.json
+**/notifications.json.*
+.cache/quickshell/
+
+# Secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.p12
+*.pfx
+credentials*
+secrets*
+tokens*
+**/cookies*
+**/cookie.sqlite*
+
+# Machine / package install footprints
+illogical-impulse/installed_listfile
+illogical-impulse/installed_true
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.orig
+
+# Large media not part of config
+*.mp4
+*.webm
+*.mkv
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.gif
+!docs/**/*.png
